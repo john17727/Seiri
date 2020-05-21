@@ -20,24 +20,23 @@
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
-            android:textColor="@color/color_on_primary"
-            android:textSize="28sp"
+            android:textAppearance="@style/TextAppearance.Seiri.CardTitle"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Card Title" />
 
         <TextView
             android:id="@+id/card_course_days_text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:gravity="end"
-            android:textColor="@color/color_on_primary"
-            android:textSize="16sp"
+            android:textAppearance="?attr/textAppearanceSubtitle1"
             android:transitionName="days_transition"
+            app:layout_constraintBottom_toTopOf="@+id/card_course_time_text"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/card_course_name_text"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/card_course_time_text"
             app:layout_constraintVertical_chainStyle="packed"
             tools:text="Tue, Thu" />
 
@@ -46,8 +45,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:gravity="end"
-            android:textColor="@color/color_on_primary"
-            android:textSize="16sp"
+            android:textAppearance="?attr/textAppearanceSubtitle1"
             android:transitionName="time_transition"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

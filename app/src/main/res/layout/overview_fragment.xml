@@ -3,14 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.Overview"
-    android:layoutAnimation="@anim/layout_enter">
+    android:layoutAnimation="@anim/layout_enter"
+    tools:context=".fragment.Overview">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Overview"
         android:padding="16dp"
-        style="@style/TextAppearance.MyTheme.FragmentTitle" />
+        android:text="Overview"
+        android:textAppearance="?attr/textAppearanceHeadline2" />
 
 </FrameLayout>

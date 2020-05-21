@@ -10,12 +10,12 @@
 
     <TextView
         android:id="@+id/details_course_name"
-        style="@style/TextAppearance.MyTheme.BottomSheetTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:paddingHorizontal="48dp"
         android:paddingVertical="16dp"
+        android:textAppearance="?attr/textAppearanceHeadline5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -33,21 +33,21 @@
 
     <TextView
         android:id="@+id/details_course_days"
-        style="@style/TextAppearance.MyTheme.BottomSheetText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
+        android:textAppearance="?attr/textAppearanceSubtitle1"
         app:layout_constraintStart_toEndOf="@+id/course_date_time_icon"
         app:layout_constraintTop_toBottomOf="@id/details_course_name"
         tools:text="Days" />
 
     <TextView
         android:id="@+id/details_course_time"
-        style="@style/TextAppearance.MyTheme.BottomSheetText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:textAppearance="?attr/textAppearanceSubtitle1"
         app:layout_constraintStart_toEndOf="@+id/course_date_time_icon"
         app:layout_constraintTop_toBottomOf="@id/details_course_days"
         tools:text="Time" />
@@ -64,32 +64,32 @@
 
     <TextView
         android:id="@+id/details_course_building"
-        style="@style/TextAppearance.MyTheme.BottomSheetText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="44dp"
+        android:textAppearance="?attr/textAppearanceSubtitle1"
         app:layout_constraintStart_toEndOf="@+id/course_location_icon"
         app:layout_constraintTop_toBottomOf="@id/course_date_time_icon"
         tools:text="Building" />
 
     <TextView
         android:id="@+id/details_course_room"
-        style="@style/TextAppearance.MyTheme.BottomSheetText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:textAppearance="?attr/textAppearanceSubtitle1"
         app:layout_constraintStart_toEndOf="@+id/course_location_icon"
         app:layout_constraintTop_toBottomOf="@id/details_course_building"
         tools:text="Room" />
 
     <TextView
         android:id="@+id/details_professor"
-        style="@style/TextAppearance.MyTheme.BottomSheetTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:paddingHorizontal="48dp"
+        android:textAppearance="?attr/textAppearanceHeadline5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/course_location_icon"
@@ -97,11 +97,11 @@
 
     <TextView
         android:id="@+id/details_professor_email"
-        style="@style/TextAppearance.MyTheme.BottomSheetSubtitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:paddingHorizontal="48dp"
         android:paddingBottom="16dp"
+        android:textAppearance="?attr/textAppearanceHeadline6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/details_professor"
@@ -119,21 +119,21 @@
 
     <TextView
         android:id="@+id/details_professor_days"
-        style="@style/TextAppearance.MyTheme.BottomSheetText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="28dp"
+        android:textAppearance="?attr/textAppearanceSubtitle1"
         app:layout_constraintStart_toEndOf="@+id/professor_date_time_icon"
         app:layout_constraintTop_toBottomOf="@id/details_professor_email"
         tools:text="Days" />
 
     <TextView
         android:id="@+id/details_professor_time"
-        style="@style/TextAppearance.MyTheme.BottomSheetText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:textAppearance="?attr/textAppearanceSubtitle1"
         app:layout_constraintStart_toEndOf="@+id/professor_date_time_icon"
         app:layout_constraintTop_toBottomOf="@id/details_professor_days"
         tools:text="Time" />
@@ -150,21 +150,21 @@
 
     <TextView
         android:id="@+id/details_professor_building"
-        style="@style/TextAppearance.MyTheme.BottomSheetText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="44dp"
+        android:textAppearance="?attr/textAppearanceSubtitle1"
         app:layout_constraintStart_toEndOf="@+id/professor_location_icon"
         app:layout_constraintTop_toBottomOf="@id/professor_date_time_icon"
         tools:text="Building" />
 
     <TextView
         android:id="@+id/details_professor_room"
-        style="@style/TextAppearance.MyTheme.BottomSheetText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:textAppearance="?attr/textAppearanceSubtitle1"
         app:layout_constraintStart_toEndOf="@+id/professor_location_icon"
         app:layout_constraintTop_toBottomOf="@id/details_professor_building"
         tools:text="Room" />

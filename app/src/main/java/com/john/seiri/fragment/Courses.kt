@@ -80,19 +80,19 @@ class Courses : Fragment(), CourseAdapter.OnCourseClickListener, CourseDetailDia
         when (color) {
             -14776091 -> setStyle(
                 BottomSheetDialogFragment.STYLE_NORMAL,
-                R.style.ThemeOverlay_MyTheme_BottomSheetDialog_Blue
+                R.style.ThemeOverlay_Seiri_BottomSheetDialog_Blue
             )
             -765666 -> setStyle(
                 BottomSheetDialogFragment.STYLE_NORMAL,
-                R.style.ThemeOverlay_MyTheme_BottomSheetDialog_Orange
+                R.style.ThemeOverlay_Seiri_BottomSheetDialog_Orange
             )
             -1754827 -> setStyle(
                 BottomSheetDialogFragment.STYLE_NORMAL,
-                R.style.ThemeOverlay_MyTheme_BottomSheetDialog_Red
+                R.style.ThemeOverlay_Seiri_BottomSheetDialog_Red
             )
             -12345273 -> setStyle(
                 BottomSheetDialogFragment.STYLE_NORMAL,
-                R.style.ThemeOverlay_MyTheme_BottomSheetDialog_Green
+                R.style.ThemeOverlay_Seiri_BottomSheetDialog_Green
             )
         }
     }

@@ -1,72 +1,38 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="ThemeOverlay.MyTheme.BottomSheetDialog" parent="ThemeOverlay.MaterialComponents.Dialog">
+    <style name="ThemeOverlay.Seiri.BottomSheetDialog" parent="ThemeOverlay.MaterialComponents.Dialog">
         <item name="android:windowIsFloating">false</item>
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowAnimationStyle">@style/Animation.MyTheme.BottomSheet.Modal</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="bottomSheetStyle">@style/Widget.MyTheme.BottomSheet.Modal</item>
+        <item name="bottomSheetStyle">@style/Widget.Seiri.BottomSheet.Modal</item>
         <item name="android:navigationBarColor">?colorSurface</item>
-        <item name="android:navigationBarDividerColor" tools:ignore="NewApi" tools:targetApi="o_mr1">@android:color/transparent</item>
+        <item name="android:navigationBarDividerColor" tools:ignore="NewApi" tools:targetApi="o_mr1">
+            @android:color/transparent
+        </item>
     </style>
-    <style name="Widget.MyTheme.BottomSheet.Modal" parent="Widget.MaterialComponents.BottomSheet.Modal">
+
+    <style name="Widget.Seiri.BottomSheet.Modal" parent="Widget.MaterialComponents.BottomSheet.Modal">
         <item name="shapeAppearanceOverlay">?shapeAppearanceLargeComponent</item>
     </style>
 
-    <style name="ThemeOverlay.MyTheme.BottomSheetDialog.Blue" parent="ThemeOverlay.MaterialComponents.Dialog">
-        <item name="android:windowIsFloating">false</item>
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:windowAnimationStyle">@style/Animation.MyTheme.BottomSheet.Modal</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="bottomSheetStyle">@style/Widget.MyTheme.BottomSheet.Modal.Blue</item>
+    <style name="ThemeOverlay.Seiri.BottomSheetDialog.Blue">
         <item name="android:navigationBarColor">@color/Blue</item>
-        <item name="android:navigationBarDividerColor" tools:ignore="NewApi" tools:targetApi="o_mr1">@android:color/transparent</item>
-    </style>
-    <style name="Widget.MyTheme.BottomSheet.Modal.Blue" parent="Widget.MaterialComponents.BottomSheet.Modal">
-        <item name="shapeAppearanceOverlay">?shapeAppearanceLargeComponent</item>
         <item name="android:backgroundTint">@color/Blue</item>
     </style>
 
-    <style name="ThemeOverlay.MyTheme.BottomSheetDialog.Orange" parent="ThemeOverlay.MaterialComponents.Dialog">
-        <item name="android:windowIsFloating">false</item>
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:windowAnimationStyle">@style/Animation.MyTheme.BottomSheet.Modal</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="bottomSheetStyle">@style/Widget.MyTheme.BottomSheet.Modal.Orange</item>
+    <style name="ThemeOverlay.Seiri.BottomSheetDialog.Orange">
         <item name="android:navigationBarColor">@color/Orange</item>
-        <item name="android:navigationBarDividerColor" tools:ignore="NewApi" tools:targetApi="o_mr1">@android:color/transparent</item>
-    </style>
-    <style name="Widget.MyTheme.BottomSheet.Modal.Orange" parent="Widget.MaterialComponents.BottomSheet.Modal">
-        <item name="shapeAppearanceOverlay">?shapeAppearanceLargeComponent</item>
         <item name="android:backgroundTint">@color/Orange</item>
     </style>
 
-    <style name="ThemeOverlay.MyTheme.BottomSheetDialog.Red" parent="ThemeOverlay.MaterialComponents.Dialog">
-        <item name="android:windowIsFloating">false</item>
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:windowAnimationStyle">@style/Animation.MyTheme.BottomSheet.Modal</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="bottomSheetStyle">@style/Widget.MyTheme.BottomSheet.Modal.Red</item>
+    <style name="ThemeOverlay.Seiri.BottomSheetDialog.Red">
         <item name="android:navigationBarColor">@color/Red</item>
-        <item name="android:navigationBarDividerColor" tools:ignore="NewApi" tools:targetApi="o_mr1">@android:color/transparent</item>
-    </style>
-    <style name="Widget.MyTheme.BottomSheet.Modal.Red" parent="Widget.MaterialComponents.BottomSheet.Modal">
-        <item name="shapeAppearanceOverlay">?shapeAppearanceLargeComponent</item>
         <item name="android:backgroundTint">@color/Red</item>
     </style>
 
-    <style name="ThemeOverlay.MyTheme.BottomSheetDialog.Green" parent="ThemeOverlay.MaterialComponents.Dialog">
-        <item name="android:windowIsFloating">false</item>
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:windowAnimationStyle">@style/Animation.MyTheme.BottomSheet.Modal</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="bottomSheetStyle">@style/Widget.MyTheme.BottomSheet.Modal.Green</item>
+    <style name="ThemeOverlay.Seiri.BottomSheetDialog.Green">
         <item name="android:navigationBarColor">@color/Green</item>
-        <item name="android:navigationBarDividerColor" tools:ignore="NewApi" tools:targetApi="o_mr1">@android:color/transparent</item>
-    </style>
-    <style name="Widget.MyTheme.BottomSheet.Modal.Green" parent="Widget.MaterialComponents.BottomSheet.Modal">
-        <item name="shapeAppearanceOverlay">?shapeAppearanceLargeComponent</item>
         <item name="android:backgroundTint">@color/Green</item>
     </style>
-
 </resources>

@@ -14,11 +14,11 @@
 
         <TextView
             android:id="@+id/courses_label"
-            style="@style/TextAppearance.MyTheme.FragmentTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="16dp"
             android:text="@string/courses"
+            android:textAppearance="?attr/textAppearanceHeadline2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -29,11 +29,11 @@
             android:layout_height="0dp"
             android:layoutAnimation="@anim/recycler_enter"
             android:paddingTop="16dp"
-            tools:listitem="@layout/item_course"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/courses_label" />
+            app:layout_constraintTop_toBottomOf="@+id/courses_label"
+            tools:listitem="@layout/item_course" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
