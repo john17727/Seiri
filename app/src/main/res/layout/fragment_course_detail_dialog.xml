@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/course_details_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@color/Orange"
+    tools:context=".fragment.CourseDetailDialogFragment">
+
+    <TextView
+        android:id="@+id/details_course_name"
+        style="@style/TextAppearance.MyTheme.BottomSheetTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingHorizontal="48dp"
+        android:paddingVertical="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Course Name" />
+
+    <ImageView
+        android:id="@+id/course_date_time_icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details_course_name" />
+
+    <TextView
+        android:id="@+id/details_course_days"
+        style="@style/TextAppearance.MyTheme.BottomSheetText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toEndOf="@+id/course_date_time_icon"
+        app:layout_constraintTop_toBottomOf="@id/details_course_name"
+        tools:text="Days" />
+
+    <TextView
+        android:id="@+id/details_course_time"
+        style="@style/TextAppearance.MyTheme.BottomSheetText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/course_date_time_icon"
+        app:layout_constraintTop_toBottomOf="@id/details_course_days"
+        tools:text="Time" />
+
+    <ImageView
+        android:id="@+id/course_location_icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/ic_location"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/course_date_time_icon" />
+
+    <TextView
+        android:id="@+id/details_course_building"
+        style="@style/TextAppearance.MyTheme.BottomSheetText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintStart_toEndOf="@+id/course_location_icon"
+        app:layout_constraintTop_toBottomOf="@id/course_date_time_icon"
+        tools:text="Building" />
+
+    <TextView
+        android:id="@+id/details_course_room"
+        style="@style/TextAppearance.MyTheme.BottomSheetText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/course_location_icon"
+        app:layout_constraintTop_toBottomOf="@id/details_course_building"
+        tools:text="Room" />
+
+    <TextView
+        android:id="@+id/details_professor"
+        style="@style/TextAppearance.MyTheme.BottomSheetTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:paddingHorizontal="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/course_location_icon"
+        tools:text="Professor Name" />
+
+    <TextView
+        android:id="@+id/details_professor_email"
+        style="@style/TextAppearance.MyTheme.BottomSheetSubtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="48dp"
+        android:paddingBottom="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details_professor"
+        tools:text="Professor's Email" />
+
+    <ImageView
+        android:id="@+id/professor_date_time_icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/ic_time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details_professor_email" />
+
+    <TextView
+        android:id="@+id/details_professor_days"
+        style="@style/TextAppearance.MyTheme.BottomSheetText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toEndOf="@+id/professor_date_time_icon"
+        app:layout_constraintTop_toBottomOf="@id/details_professor_email"
+        tools:text="Days" />
+
+    <TextView
+        android:id="@+id/details_professor_time"
+        style="@style/TextAppearance.MyTheme.BottomSheetText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/professor_date_time_icon"
+        app:layout_constraintTop_toBottomOf="@id/details_professor_days"
+        tools:text="Time" />
+
+    <ImageView
+        android:id="@+id/professor_location_icon"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/ic_location"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/professor_date_time_icon" />
+
+    <TextView
+        android:id="@+id/details_professor_building"
+        style="@style/TextAppearance.MyTheme.BottomSheetText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintStart_toEndOf="@+id/professor_location_icon"
+        app:layout_constraintTop_toBottomOf="@id/professor_date_time_icon"
+        tools:text="Building" />
+
+    <TextView
+        android:id="@+id/details_professor_room"
+        style="@style/TextAppearance.MyTheme.BottomSheetText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/professor_location_icon"
+        app:layout_constraintTop_toBottomOf="@id/details_professor_building"
+        tools:text="Room" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/course_edit_button"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Edit"
+        android:textColor="@color/color_on_primary"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/course_delete_button"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/professor_location_icon" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/course_delete_button"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Delete"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/course_edit_button"
+        app:layout_constraintTop_toBottomOf="@+id/professor_location_icon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
