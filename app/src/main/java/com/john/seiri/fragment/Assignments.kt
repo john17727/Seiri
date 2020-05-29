@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AnimationUtils
 import androidx.lifecycle.ViewModelProvider
+import com.google.android.material.appbar.CollapsingToolbarLayout
 import com.john.seiri.R
 import com.john.seiri.viewmodel.AssignmentsViewModel
 import kotlinx.android.synthetic.main.assignments_fragment.*
@@ -14,17 +15,16 @@ import kotlinx.android.synthetic.main.assignments_fragment.*
 
 class Assignments : Fragment() {
 
-    companion object {
-        fun newInstance() = Assignments()
-    }
-
     private lateinit var viewModel: AssignmentsViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.assignments_fragment, container, false)
+        val view = inflater.inflate(R.layout.assignments_fragment, container, false)
+        val toolbarLayout = activity?.findViewById<CollapsingToolbarLayout>(R.id.collapsing_toolbar)
+        toolbarLayout?.title = getString(R.string.assignments)
+        return view
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

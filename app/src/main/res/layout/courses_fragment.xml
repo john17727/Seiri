@@ -6,36 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".fragment.Courses">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/courses_page"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layoutAnimation="@anim/layout_enter">
-
-        <TextView
-            android:id="@+id/courses_label"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:text="@string/courses"
-            android:textAppearance="?attr/textAppearanceHeadline2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/courses_recycler"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="match_parent"
             android:layoutAnimation="@anim/recycler_enter"
-            android:paddingTop="16dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/courses_label"
+            android:layout_gravity="center"
             tools:listitem="@layout/item_course" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/add_course_fab"
@@ -43,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center_horizontal"
         android:layout_margin="16dp"
-        android:text="Add Course"
+        android:text="@string/add_course"
         app:icon="@drawable/ic_add" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

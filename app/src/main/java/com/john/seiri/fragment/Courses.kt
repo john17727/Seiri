@@ -10,6 +10,7 @@ import android.view.animation.AnimationUtils
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.android.material.appbar.CollapsingToolbarLayout
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.google.android.material.card.MaterialCardView
 import com.john.seiri.R
@@ -24,17 +25,16 @@ class Courses : Fragment(), CourseAdapter.OnCourseClickListener, CourseDetailDia
     private lateinit var courseAdapter: CourseAdapter
     private lateinit var courseCardView: MaterialCardView
 
-    companion object {
-        fun newInstance() = Courses()
-    }
-
     private lateinit var viewModel: CoursesViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.courses_fragment, container, false)
+        val view = inflater.inflate(R.layout.courses_fragment, container, false)
+        val toolbarLayout = activity?.findViewById<CollapsingToolbarLayout>(R.id.collapsing_toolbar)
+        toolbarLayout?.title = getString(R.string.courses)
+        return view
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
